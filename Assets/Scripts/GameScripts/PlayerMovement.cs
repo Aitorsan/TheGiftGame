@@ -24,6 +24,9 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         Debug.LogFormat("horizontal velocity = {0}",rigidBody.velocity.x);
+        Debug.LogFormat("vertical velocity = {0}", rigidBody.velocity.y);
+        Debug.LogFormat("isgrounded = {0}", isGrounded);
+
         if (Physics2D.Linecast(transform.position,groundCheck.position,  1 << LayerMask.NameToLayer("Ground")))
         {
             isGrounded = true;
@@ -50,9 +53,10 @@ public class PlayerMovement : MonoBehaviour
                 animator.Play("playerRun");
             playerRenderer.flipX = true;
         }
-        else if(isGrounded)
-        {
-            animator.Play("player");
+
+        if (isGrounded)
+        { 
+                animator.Play("player");
         }
 
         if (Input.GetKey("space") && isGrounded )
