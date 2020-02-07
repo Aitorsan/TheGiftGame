@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rigidBody;
     SpriteRenderer playerRenderer;
     public float hspeed = 10.0f;
-    float jumpforce = 20.0f;
+    float jumpforce = 24.0f;
     bool isGrounded = true;
 
     [SerializeField]
@@ -22,7 +22,8 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void FixedUpdate()
-    {
+    {    
+            
         Debug.LogFormat("horizontal velocity = {0}",rigidBody.velocity.x);
         Debug.LogFormat("vertical velocity = {0}", rigidBody.velocity.y);
         Debug.LogFormat("isgrounded = {0}", isGrounded);
@@ -35,9 +36,10 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
+            animator.Play("playerJump");
             isGrounded = false;
         }
-
+        rigidBody.velocity = new Vector2(0, rigidBody.velocity.y);
         if ( Input.GetKey("d"))
         {   
             rigidBody.velocity = new Vector2(hspeed , rigidBody.velocity.y);
@@ -55,7 +57,8 @@ public class PlayerMovement : MonoBehaviour
         }
 
         if (isGrounded)
-        { 
+        {
+            if (Mathf.Abs(rigidBody.velocity.x) <= 0)
                 animator.Play("player");
         }
 
