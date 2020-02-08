@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     Animator animator;
     Rigidbody2D rigidBody;
     SpriteRenderer playerRenderer;
+    Camera mainCamera;
     float hspeed = 10.0f;
     float jumpforce = 24.0f;
     [SerializeField] Transform groundCheck;
@@ -16,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         rigidBody = GetComponent <Rigidbody2D> ();
         playerRenderer = GetComponent<SpriteRenderer>();
+        mainCamera = Camera.main;
+        mainCamera.GetComponent<CameraFollowPlayer>().enabled = true;
     }
 
     private void FixedUpdate()
