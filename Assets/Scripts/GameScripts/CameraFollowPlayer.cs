@@ -6,7 +6,7 @@ public class CameraFollowPlayer : MonoBehaviour
 {
     private Transform playerTransform;
     public float offset = 1.0f;
-    void Awake()
+    void Start()
     {
         playerTransform = GameObject.FindGameObjectWithTag("Carolin").transform;
     }
