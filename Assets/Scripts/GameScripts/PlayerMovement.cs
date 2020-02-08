@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     SpriteRenderer playerRenderer;
     Camera mainCamera;
     float hspeed = 10.0f;
-    float jumpforce = 24.0f;
+    float jumpforce = 14.0f;
     [SerializeField] Transform groundCheck;
 
     private void Start()
