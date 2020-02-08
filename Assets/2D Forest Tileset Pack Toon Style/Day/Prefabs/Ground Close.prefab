@@ -10,7 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4296048521877400}
   - component: {fileID: 212625862375330252}
-  m_Layer: 0
+  - component: {fileID: 8818805657783462818}
+  - component: {fileID: -9136609395584774477}
+  m_Layer: 8
   m_Name: Ground Close
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,6 +86,60 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1839735485 &8818805657783462818
+Tilemap:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046241428898124}
+  m_Enabled: 1
+  m_Tiles: {}
+  m_AnimatedTiles: {}
+  m_TileAssetArray: []
+  m_TileSpriteArray: []
+  m_TileMatrixArray: []
+  m_TileColorArray: []
+  m_TileObjectToInstantiateArray: []
+  m_AnimationFrameRate: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Origin: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0, y: 0, z: 1}
+  m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
+  m_TileOrientation: 0
+  m_TileOrientationMatrix:
+    e00: 1
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 1
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+--- !u!19719996 &-9136609395584774477
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046241428898124}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
 --- !u!1 &1382163464018578
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,7 +150,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4591373638539956}
   - component: {fileID: 212119569067193846}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground Close (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +231,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4240222704806122}
   - component: {fileID: 212546266343119856}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground Close (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,7 +312,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4981144360844482}
   - component: {fileID: 212262674116403744}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground Close (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

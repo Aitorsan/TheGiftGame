@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4925127532656284}
   - component: {fileID: 212575676429494760}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Trees Close
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4530460556385014}
   - component: {fileID: 212704994246696192}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Trees Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -171,7 +171,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4860918936936792}
-  m_Layer: 0
+  - component: {fileID: 6877444518033329710}
+  - component: {fileID: -1319065644000402897}
+  m_Layer: 8
   m_Name: Forest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -197,6 +199,60 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1839735485 &6877444518033329710
+Tilemap:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492490301565106}
+  m_Enabled: 1
+  m_Tiles: {}
+  m_AnimatedTiles: {}
+  m_TileAssetArray: []
+  m_TileSpriteArray: []
+  m_TileMatrixArray: []
+  m_TileColorArray: []
+  m_TileObjectToInstantiateArray: []
+  m_AnimationFrameRate: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Origin: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0, y: 0, z: 1}
+  m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
+  m_TileOrientation: 0
+  m_TileOrientationMatrix:
+    e00: 1
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 1
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+--- !u!19719996 &-1319065644000402897
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492490301565106}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
 --- !u!1 &1570451947587446
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,7 +263,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4513815443156568}
   - component: {fileID: 212094524556052226}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Leafes MIddle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -288,7 +344,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4072139867945578}
   - component: {fileID: 212128604051936382}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Trees far
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -369,7 +425,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4284959391017198}
   - component: {fileID: 212342854762633780}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Leafes Far
   m_TagString: Untagged
   m_Icon: {fileID: 0}

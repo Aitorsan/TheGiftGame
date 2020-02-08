@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4027997835435948}
   - component: {fileID: 212358303122810318}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: platform center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4734870049203084}
   - component: {fileID: 61879288283160150}
-  m_Layer: 0
+  - component: {fileID: 9150608809201999135}
+  - component: {fileID: -2439953223746079136}
+  m_Layer: 8
   m_Name: PLatform 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -144,6 +146,60 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.721626, y: 3.1384568}
   m_EdgeRadius: 0
+--- !u!1839735485 &9150608809201999135
+Tilemap:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532274206886296}
+  m_Enabled: 1
+  m_Tiles: {}
+  m_AnimatedTiles: {}
+  m_TileAssetArray: []
+  m_TileSpriteArray: []
+  m_TileMatrixArray: []
+  m_TileColorArray: []
+  m_TileObjectToInstantiateArray: []
+  m_AnimationFrameRate: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Origin: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0, y: 0, z: 1}
+  m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
+  m_TileOrientation: 0
+  m_TileOrientationMatrix:
+    e00: 1
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 1
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+--- !u!19719996 &-2439953223746079136
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532274206886296}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
 --- !u!1 &1597411464627570
 GameObject:
   m_ObjectHideFlags: 0
@@ -154,7 +210,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4877609000584376}
   - component: {fileID: 212898542268950790}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 'left corner '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -235,7 +291,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4214930494627084}
   - component: {fileID: 212813441636232276}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: platform left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -316,7 +372,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4700729807048716}
   - component: {fileID: 212197330257400154}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 'right corner  '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -397,7 +453,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4949137082488984}
   - component: {fileID: 212771790996821606}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: down
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -478,7 +534,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4192027153595188}
   - component: {fileID: 212105263271119518}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: platform right
   m_TagString: Untagged
   m_Icon: {fileID: 0}

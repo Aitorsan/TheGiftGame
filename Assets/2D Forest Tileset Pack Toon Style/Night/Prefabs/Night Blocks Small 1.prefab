@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4983528068944300}
   - component: {fileID: 212617157144716306}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: center right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4483205156074664}
   - component: {fileID: 212909453239938714}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: center_grass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -172,7 +172,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4127235966717616}
   - component: {fileID: 212372295162368248}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tree 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -253,7 +253,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4552852027189782}
   - component: {fileID: 212890039469069278}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: down
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -334,7 +334,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4320881300920990}
   - component: {fileID: 212039743120156814}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: small plant 2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -415,7 +415,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4722230996851262}
   - component: {fileID: 212156827184900698}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 'right corner  '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -496,7 +496,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4743156911747836}
   - component: {fileID: 212986337485087854}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: big plant 1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -577,7 +577,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4448699133569064}
   - component: {fileID: 212212490818263710}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: right_grass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -658,7 +658,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4976336796034848}
   - component: {fileID: 212721267246531660}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -739,7 +739,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4052508801699818}
   - component: {fileID: 212844029437623036}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: grass1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -820,7 +820,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4320236571357882}
   - component: {fileID: 61422936774757226}
-  m_Layer: 0
+  - component: {fileID: 8602503222046878905}
+  - component: {fileID: -3697635442212002474}
+  m_Layer: 8
   m_Name: Night Blocks Small 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -882,6 +884,60 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 22.488214, y: 14.054897}
   m_EdgeRadius: 0
+--- !u!1839735485 &8602503222046878905
+Tilemap:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652841170038268}
+  m_Enabled: 1
+  m_Tiles: {}
+  m_AnimatedTiles: {}
+  m_TileAssetArray: []
+  m_TileSpriteArray: []
+  m_TileMatrixArray: []
+  m_TileColorArray: []
+  m_TileObjectToInstantiateArray: []
+  m_AnimationFrameRate: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Origin: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0, y: 0, z: 1}
+  m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
+  m_TileOrientation: 0
+  m_TileOrientationMatrix:
+    e00: 1
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 1
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+--- !u!19719996 &-3697635442212002474
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652841170038268}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
 --- !u!1 &1695081129947928
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,7 +948,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4981643075123390}
   - component: {fileID: 212700178170395860}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: grass1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -973,7 +1029,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4851478628114908}
   - component: {fileID: 212764715642601770}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: left_grass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1054,7 +1110,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4031176658663532}
   - component: {fileID: 212197145110053904}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 'left corner '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1135,7 +1191,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4663423185537546}
   - component: {fileID: 212401086789260588}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: big plant 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1216,7 +1272,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4621026211139300}
   - component: {fileID: 212089893912196736}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: center left
   m_TagString: Untagged
   m_Icon: {fileID: 0}

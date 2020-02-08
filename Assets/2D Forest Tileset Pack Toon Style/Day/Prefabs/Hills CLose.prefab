@@ -10,7 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4627102122883696}
   - component: {fileID: 212910193323011500}
-  m_Layer: 0
+  - component: {fileID: 6050411900968936204}
+  - component: {fileID: -5743319418010103218}
+  m_Layer: 8
   m_Name: Hills CLose
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,6 +87,60 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1839735485 &6050411900968936204
+Tilemap:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043842403233626}
+  m_Enabled: 1
+  m_Tiles: {}
+  m_AnimatedTiles: {}
+  m_TileAssetArray: []
+  m_TileSpriteArray: []
+  m_TileMatrixArray: []
+  m_TileColorArray: []
+  m_TileObjectToInstantiateArray: []
+  m_AnimationFrameRate: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Origin: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0, y: 0, z: 1}
+  m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
+  m_TileOrientation: 0
+  m_TileOrientationMatrix:
+    e00: 1
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 1
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+--- !u!19719996 &-5743319418010103218
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043842403233626}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
 --- !u!1 &1421616916355210
 GameObject:
   m_ObjectHideFlags: 0
@@ -95,7 +151,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4437179309217080}
   - component: {fileID: 212042550703099630}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hills CLose (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -176,7 +232,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4393089523713804}
   - component: {fileID: 212001718107117138}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hills CLose (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -257,7 +313,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4978038134162904}
   - component: {fileID: 212598814212058128}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hills CLose (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -338,7 +394,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4765955099786550}
   - component: {fileID: 212195471697039852}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hills CLose (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
