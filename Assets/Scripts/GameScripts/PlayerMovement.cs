@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -8,8 +9,10 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rigidBody;
     SpriteRenderer playerRenderer;
     Camera mainCamera;
+    public Joystick joystick;
+
     float hspeed = 10.0f;
-    float jumpforce = 14.0f;
+    float jumpforce = 19.0f;
     [SerializeField] Transform groundCheck;
 
     private void Start()
@@ -22,7 +25,8 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void FixedUpdate()
-    {    
+    {
+
         if (isGrounded())
         {
             if (Mathf.Abs(rigidBody.velocity.x) <= 0)
@@ -30,33 +34,48 @@ public class PlayerMovement : MonoBehaviour
             else
                 animator.Play("playerRun");
 
-            if (Input.GetKey("space"))
+            if( Input.touchCount > 0)
             {
-                rigidBody.velocity = new Vector2(rigidBody.velocity.x, jumpforce);
-                animator.Play("playerJump");
+               // if (Input.GetKey("space"))
+                //{
+                    rigidBody.velocity = new Vector2(rigidBody.velocity.x, jumpforce);
+                    animator.Play("playerJump");
+               // }
             }
+               
+            
+
+          
         }
         else
         {
             animator.Play("playerJump");
+            if (transform.position.y < -100)
+            {
+                transform.position = new Vector3(0, 0, 0);
+            }
         }
 
         rigidBody.velocity = new Vector2(0, rigidBody.velocity.y);
-
-        if ( Input.GetKey("d"))
+        Debug.Log(string.Format("x:{0}", joystick.Horizontal));
+        if ( joystick.Horizontal >= 0.02)
         {   
             rigidBody.velocity = new Vector2(hspeed , rigidBody.velocity.y);
             playerRenderer.flipX = false;
         }
 
-        if (Input.GetKey("a") )
+        if (joystick.Horizontal <= -0.02)
         {
             rigidBody.velocity = new Vector2(-1*hspeed , rigidBody.velocity.y);
             playerRenderer.flipX = true;
         }
+
+       
       
     }
 
+
+    
 
     private bool isGrounded()
     {

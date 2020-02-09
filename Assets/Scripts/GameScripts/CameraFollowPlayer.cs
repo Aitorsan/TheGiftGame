@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraFollowPlayer : MonoBehaviour
 {
     private Transform playerTransform;
-    public float offset = 1.0f;
+    public float offset = 8.0f;
     void Start()
     {
         playerTransform = GameObject.FindGameObjectWithTag("Carolin").transform;
